@@ -1,0 +1,6 @@
+train: g:/Pyprojects/Wildfire-Detection-App-main/dataset/combineData/train
+test: g:/Pyprojects/Wildfire-Detection-App-main/dataset/combineData/test
+val: g:/Pyprojects/Wildfire-Detection-App-main/dataset/combineData/valid
+
+nc: 3
+names: ['Fire', 'Light', 'Smoke']
