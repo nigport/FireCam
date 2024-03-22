@@ -180,18 +180,18 @@ def main():
         prediction = Image.fromarray(prediction)
 
         # Create a BytesIO object to temporarily store the image data
-        image_buffer = io.BytesIO()
+        # image_buffer = io.BytesIO()
 
         # Save the image to the BytesIO object in PNG format
-        prediction.save(image_buffer, format='PNG')
+        # prediction.save(image_buffer, format='PNG')
 
         # Create a download button for the image
-        st.download_button(
-            label='Сохранить результат детекции',
-            data=image_buffer.getvalue(),
-            file_name='prediciton.png',
-            mime='image/png'
-        )
+        #st.download_button(
+            #label='Сохранить результат детекции',
+            #data=image_buffer.getvalue(),
+            #file_name='prediciton.png',
+            #mime='image/png'
+        #)
 
 
 if __name__ == "__main__":
