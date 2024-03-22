@@ -1,3 +1,5 @@
 opencv-python
 streamlit
 ultralytics
+libgl1
+libglib2.0-0
