@@ -4,11 +4,7 @@ from ultralytics import YOLO
 import requests  # type: ignore
 from PIL import Image
 import os
-from glob import glob
-from numpy import random
-import io
 
-os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
 
 # Загрузить модель YOLO
@@ -128,7 +124,7 @@ def main():
     model_files = [f.replace(".pt", "") for f in os.listdir(models_dir) if f.endswith(".pt")]
 
     with col2:
-        selected_model = st.selectbox("Выберите размер модели", sorted(model_files), index=2)
+        selected_model = st.selectbox("Выберите размер модели", sorted(model_files), index=1)
 
     # Load the selected model
     model_path = os.path.join(models_dir, selected_model + ".pt")  # type: ignore
